@@ -23,7 +23,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v5 # آپدیت شده به v5
         with:
-          fetch-depth: 0 # برای اینکه تاریخچه کامل گیت رو داشته باشیم و push ها راحت‌تر انجام بشه
+          fetch-depth: 1 
 
       - name: Install 7z
         run: sudo apt-get update && sudo apt-get install -y p7zip-full
